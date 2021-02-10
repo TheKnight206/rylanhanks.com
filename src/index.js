@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import Homepage from './components/Homepage';
 import reportWebVitals from './testing/reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import './css/Navigation.css';
+
+import Navigation from "./layouts/Navigation";
+import LandingPage from "./pages/Landing-Page";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Homepage />
+      <Router forceRefresh={true}>
+          <Navigation isMobile={false}/>
+          <Switch>
+              <Route path = "/about" component={About}/>
+              <Route path = "/projects" component={Projects}/>
+              <Route path = "/contact" component={Contact}/>
+              <Route exact path = "/" component={LandingPage}/>
+          </Switch>
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

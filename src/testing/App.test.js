@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Homepage from '../components/Homepage';
+import LandingPage from '../pages/Landing-Page';
 
 test('renders learn react link', () => {
-  render(<Homepage />);
+  render(<LandingPage />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
