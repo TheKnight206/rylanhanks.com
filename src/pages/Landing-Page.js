@@ -2,22 +2,24 @@ import Navigation from "../layouts/Navigation";
 import Typewriter from "../components/Typewriter";
 import { Redirect } from "react-router-dom";
 import React from 'react';
+import "../css/Landing-Page.css";
 
 class LandingPage extends React.Component{
     state = {
         redirect: false,
     }
 
-
     render() {
         return (
-            <div className="container">
+            <div className="content-wrapper">
                 <Navigation isMobile = {this.props.isMobile}/>
-                <div className="bounds">
-                    <Typewriter list={this.props.displayText} defaultMessage={this.props.defaultText}/>
-                </div>
-                <div className="button-container">
-                    <button onClick={() => this.setState({redirect: true})}> Let's Talk</button>
+                <div className="page-content">
+                    <div className="bounds">
+                        <Typewriter list={this.props.displayText} defaultMessage={this.props.defaultText}/>
+                    </div>
+                    <div className="button-container">
+                        <button onClick={() => this.setState({redirect: true})}> Let's Talk</button>
+                    </div>
                 </div>
                 {this.state.redirect && <Redirect to="/home"/>}
             </div>

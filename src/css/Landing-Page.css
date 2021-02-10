@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+    background: rgb(230,228,228);
+    background: -moz-radial-gradient(circle, rgb(245, 245, 245) 50%, rgb(239, 233, 233) 100%);
+    background: -webkit-radial-gradient(circle, rgb(245, 245, 245) 50%, rgb(239, 233, 233) 100%);
+    background: radial-gradient(circle, rgb(245, 245, 245) 50%, rgb(239, 233, 233) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e4e4",endColorstr="#dbd1d1",GradientType=1);
+}
+
+.page-content {
+
+}
+
+.bounds {
+    width: 50%;
+    margin-bottom: 20%;
+    white-space: pre-wrap;
+    text-align: center;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 2.7rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    border: 0;
+    border-radius: 3px;
+    background-color: #672b2b;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem 6rem 2rem 6rem;
+
+    box-shadow: 0.2rem 0.2rem 5px 2px rgba(103, 43, 43, 0.4);
+}
+
+
+

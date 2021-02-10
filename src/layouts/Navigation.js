@@ -7,22 +7,22 @@ class Navigation extends React.Component {
         if (!this.props.isMobile) {
             return (
                 <Router>
-                    <nav className="Container">
-                        <ul className="Links">
-                            <li className="Link">
-                                <NavLink to="/home" activeClassName="active"> Home </NavLink>
+                    <nav>
+                        <ul className="links">
+                            <li className="link">
+                                <NavLink exact to="/" activeClassName="active" className="link-text"> Home </NavLink>
                             </li>
 
-                            <li className="Link">
-                                <NavLink to="/about" activeClassName="active"> About </NavLink>
+                            <li className="link">
+                                <NavLink to="/about" activeClassName="active" className="link-text"> About </NavLink>
                             </li>
 
-                            <li className="Link">
-                                <NavLink to="/projects" activeClassName="active"> Projects </NavLink>
+                            <li className="link">
+                                <NavLink to="/projects" activeClassName="active" className="link-text"> Projects </NavLink>
                             </li>
 
-                            <li className="Link">
-                                <NavLink to="/contact" activeClassName="active"> Contact Me </NavLink>
+                            <li className="link">
+                                <NavLink to="/contact" activeClassName="active" className="link-text"> Contact Me </NavLink>
                             </li>
                         </ul>
                     </nav>

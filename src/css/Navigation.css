@@ -1,3 +1,33 @@
+nav {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #672b2b;
+    box-shadow: 0 0.2rem 5px 2px rgba(103, 43, 43, 0.4);
+}
+
+.links {
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.link-text {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.25s ease-out;
+}
+
+.link-text:hover {
+    background-color: rgba(183, 175, 175, 0.1);
+}
+
 .active {
-    color: blueviolet;
+    border-bottom: solid 1px;
 }
