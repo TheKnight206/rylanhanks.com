@@ -12,12 +12,12 @@ html {
 }
 
 .bounds {
-    width: 50%;
+    width: 73%;
     margin-bottom: 20%;
     white-space: pre-wrap;
     text-align: center;
     font-family: "JetBrains Mono", sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     position: absolute;
     top: 40%;
     left: 50%;

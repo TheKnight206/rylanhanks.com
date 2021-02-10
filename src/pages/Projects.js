@@ -1,11 +1,10 @@
-import Navigation from "../layouts/Navigation";
 import React from 'react';
 
 class Projects extends React.Component{
     render() {
         return (
             <div className="content-wrapper">
-                <Navigation isMobile = {this.props.isMobile}/>
+                <h1> projects </h1>
             </div>
         );
     }

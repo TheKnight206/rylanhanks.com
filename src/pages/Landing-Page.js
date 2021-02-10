@@ -1,4 +1,3 @@
-import Navigation from "../layouts/Navigation";
 import Typewriter from "../components/Typewriter";
 import { Redirect } from "react-router-dom";
 import React from 'react';
@@ -12,7 +11,6 @@ class LandingPage extends React.Component{
     render() {
         return (
             <div className="content-wrapper">
-                <Navigation isMobile = {this.props.isMobile}/>
                 <div className="page-content">
                     <div className="bounds">
                         <Typewriter list={this.props.displayText} defaultMessage={this.props.defaultText}/>
@@ -21,21 +19,20 @@ class LandingPage extends React.Component{
                         <button onClick={() => this.setState({redirect: true})}> Let's Talk</button>
                     </div>
                 </div>
-                {this.state.redirect && <Redirect to="/home"/>}
+                {this.state.redirect && <Redirect to="/contact"/>}
             </div>
         );
     }
 }
 
 LandingPage.defaultProps = {
-    isMobile: false,
     displayText: [
         " Rylan.",
         " a web-developer.",
         " creative-minded.",
         " a software-engineering student.",
         " goal-oriented.",
-        " a natural-born leader.",
+        " a leader.",
         " happy to meet you."
     ],
     defaultText: "Hi, I'm"
