@@ -1,0 +1,40 @@
+.content-wrapper {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Montserrat, sans-serif;
+}
+
+section {
+    text-align: center;
+    padding: 5vh;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 60vh;
+    border-radius: 15px;
+}
+
+@media (min-width: 1500px){
+    .content-wrapper {
+        grid-template-columns: auto auto;
+    }
+    section {
+        padding: 10vh;
+    }
+}
